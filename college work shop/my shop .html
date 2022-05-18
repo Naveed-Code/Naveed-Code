@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        debugger;
+          // let items, netPrice, totalPrice, discount, quantity;
+          // alert("this is KFC");
+          // alert("1= shovarma" + "\n" + "2= pizza" + "\n" + "3= burger" )
+          // alert("shovarma=100" +"\n"+"pizza=1500"+"\n"+"burger=150")
+          // let choice = confirm("you are shoure")
+          // items= prompt("enter your meal")
+          // if(items=="1");
+          // quantity=(prompt("how many picese"));
+          // netPrice= quantity * 100;
+          // let std = confirm("are you student");
+          // discount = netPrice*10/100;
+          // totalPrice = netPrice - discount;
+          // document.write(` Your Item is shovarma <br> 1 item price is <b>100</b> <br> You Ordered ${quantity} items. <br> Your Net Price is ${netPrice} <br> You Total Pirce Is ${totalPrice}  `)
+
+      function dataEntery( name, DOB, MobileNo ){
+          name = prompt("Enter Your Name");
+          DOB = prompt("Enter Your Date Of Birth");
+          MobileNo = prompt("Enter Your Mobile/Phone Number");
+          let UserData = document.write( name + " " + DOB + " " + MobileNo)
+          return UserData;
+      }
+
+      function saleItems(pizza, burger, Samoosa, price){
+          const UserSelect = confirm("Do you want to Buy something from this shop?");
+          if (UserSelect == true) {
+              var selectItems = parseInt(prompt("Enter Your Item. " + "\n" + "1=Pizza" + "\n" + "2=Burger" + "\n" + "3=Samoosa"));
+                var quantity = parseInt(prompt("Enter your Quantity of Selected Item"));
+                if (selectItems == 1) {
+                        price = 1000 * quantity;
+                        document.write(price);
+                    }
+                    if (selectItems == 2) {
+                        price = 1000 * quantity;
+                        document.write(price);
+                    }
+                    if (selectItems == 3) {
+                        price = 1000 * quantity;
+                        document.write(price);
+                    }
+                    
+                }
+                else{
+                    alert("Ok SIR Have A nice Day.");
+                }
+                
+            }
+            
+        function discount(Students, totalPrice, price) {
+            var IsStudent = confirm("Are YOu a Student?");
+            if(IsStudent == true){
+                totalPrice = ((saleItems() / 15) * 100).toFixed(4);
+                document.write(totalPrice);
+            }
+            else{
+                alert("Ok")
+            }
+            return totalPrice;
+        }
+
+
+        // dataEntery();
+        // saleItems
+        discount();
+
+        
+    </script>
+  </body>
+</html>

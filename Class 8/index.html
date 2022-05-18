@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert Box, Confirm box, Prompt funcntion</title>
+</head>
+<body>
+    <script>
+        var confirmBox = confirm("Do you want to Fill The Form");
+        
+        if( confirmBox == true){
+            const StDName = prompt("Enter Your Name");
+            let phy, urdu, english;
+            phy = parseInt(prompt("Enter Physics Marks"))
+            urdu = parseInt(prompt("Enter urdu Marks"))
+            english = parseInt(prompt("Enter english Marks"))
+            const totalMarks = phy + urdu + english;
+
+            document.write(` 
+                Student name = ${StDName} <br>
+                Your Total Marks = ${totalMarks}
+            `)
+        }
+        else{
+            document.write("Okk Have A nice day")
+        }
+/* 
+        alert() = this function is used to show us "Ok" sign that explains your program is successfully completed or not.
+
+        confirm() = this will gives us 2 values " Ok , Cancel" weather its true either false;
+
+        prompt()  = this is allow us to take data from users and maniuplate is as user wants;
+
+        */
+
+    </script>
+</body>
+</html>
